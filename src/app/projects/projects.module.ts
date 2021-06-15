@@ -1,20 +1,22 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AddProjectComponent } from './add-project/add-project.component';
-import { EditProjectComponent } from './edit-project/edit-project.component';
+import { ProjectsListComponent } from './projects-list/projects-list.component';
 import { ProjectsComponent } from './projects.component';
-
-
+import { ProjectsRoutingModule } from './project-routing.module';
+import { AddProjectDialogComponent } from './add-project-dialog/add-project-dialog.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [
     ProjectsComponent,
-    AddProjectComponent,
-    EditProjectComponent
+    ProjectsListComponent,
+    AddProjectDialogComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule,
+    ProjectsRoutingModule
   ]
 })
 export class ProjectsModule { }

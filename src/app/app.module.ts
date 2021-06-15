@@ -4,10 +4,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LayoutComponent } from './layout/layout.component';
 import { ProjectsModule } from './projects/projects.module';
+
+import {MatDialogModule} from '@angular/material/dialog';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { LoginComponent } from './login/login.component';
 import { ForgetPasswordComponent } from './login/forget-password/forget-password.component';
 import { ResetPasswordComponent } from './login/reset-password/reset-password.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 
 
@@ -24,6 +29,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     ProjectsModule,
+    MatDialogModule,
+    BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule
   ],

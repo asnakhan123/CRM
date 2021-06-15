@@ -4,10 +4,16 @@ import { ForgetPasswordComponent } from './login/forget-password/forget-password
 import { LoginComponent } from './login/login.component';
 import { ProjectsComponent } from './projects/projects.component';
 
+
 const routes: Routes = [
-  {path:'projects', component:ProjectsComponent},
+ {
+  path:'projects',  
+  loadChildren: () => import('./projects/projects.module').then(m => m.ProjectsModule)
+ },
+ { path: 'dept', loadChildren: () => import('./dept/dept.module').then(m => m.DeptModule) },
   {path:'login', component:LoginComponent},
   {path:'forget-password', component:ForgetPasswordComponent}
+
 ];
 
 @NgModule({
