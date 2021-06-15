@@ -5,6 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LayoutComponent } from './layout/layout.component';
 import { ProjectsModule } from './projects/projects.module';
+import {MatDialogModule} from '@angular/material/dialog';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 
 @NgModule({
@@ -16,7 +19,9 @@ import { ProjectsModule } from './projects/projects.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ProjectsModule
+    ProjectsModule,
+    MatDialogModule,
+    BrowserAnimationsModule
   ],
   providers: [],  
   bootstrap: [AppComponent]
