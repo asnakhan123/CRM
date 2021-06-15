@@ -32,7 +32,5 @@ export class ProjectsComponent implements OnInit {
       console.log(result);
     });
 
-    
   }
-
 }
